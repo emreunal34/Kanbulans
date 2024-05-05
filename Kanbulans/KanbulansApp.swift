@@ -1,17 +1,18 @@
-//
-//  KanbulansApp.swift
-//  Kanbulans
-//
-//  Created by Caner Ünal on 30.03.2024.
-//
-
 import SwiftUI
+import Firebase
+import FirebaseCore
+import FirebaseFirestore
 
 @main
 struct KanbulansApp: App {
+    
+    init() {
+        FirebaseApp.configure()
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            OnBoardScreen()
         }
     }
 }
